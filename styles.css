@@ -10,23 +10,28 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
 /* Hero Section */
-.hero {
+.hero-small {
     position: relative;
-    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
-    height: 100vh;
+    background: url('https://via.placeholder.com/1920x500') center/cover no-repeat;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.hero .overlay {
+.hero-small.parallax {
+    background-attachment: fixed;
+}
+
+.hero-small .overlay {
     background: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
 }
 
@@ -38,41 +43,15 @@ body {
 
 .hero-subtitle {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
 }
 
-.cta-button {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    background: #8B0000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #B22222;
-}
-
-/* Intro Section */
-.intro-section {
-    padding: 4rem 2rem;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-.intro-section h2 {
+/* Section Titles */
+.wine-list-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.intro-section p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #8B0000;
 }
 
 /* Swiper Container */
@@ -91,26 +70,32 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0.5; /* Default lower opacity for inactive slides */
+    opacity: 0.5; /* Default opacity for inactive slides */
     transition: opacity 0.5s ease; /* Smooth transition for opacity */
 }
 
 .swiper-slide-active {
-    opacity: 1; /* Full opacity for the active slide */
+    opacity: 1; /* Full opacity for active slide */
 }
 
 /* Wine Container */
 .wine-container {
     background: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem; /* Space above the pagination dots */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.wine-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .wine-container img {
-    max-height: 300px; /* Uniform image height */
-    object-fit: contain; /* Prevent image distortion */
+    max-height: 300px;
+    object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 10px;
 }
@@ -124,12 +109,76 @@ body {
 .wine-container p {
     font-size: 1rem;
     color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Wine Metrics (Sweetness, Tannins, Acidity) */
+.wine-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.metric {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.metric span {
+    font-size: 1rem;
+    color: #333;
+    width: 30%;
+    text-align: left;
+}
+
+.metric .meter {
+    width: 70%;
+    height: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.metric .fill {
+    height: 100%;
+    background: #8B0000;
+    border-radius: 5px;
+}
+
+/* Wine Actions (Buttons and Ratings) */
+.wine-actions {
+    text-align: center;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #B22222;
+    transform: scale(1.05);
+}
+
+.rating {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
 }
 
 /* Pagination Dots */
 .swiper-pagination {
     position: relative;
-    bottom: -20px; /* Move dots below the wine container */
+    bottom: -20px;
     text-align: center;
 }
 
@@ -137,10 +186,11 @@ body {
     background: #333;
     opacity: 0.8;
     margin: 0 5px;
+    transition: background 0.3s ease;
 }
 
 .swiper-pagination-bullet-active {
-    background: #8B0000; /* Highlight active dot */
+    background: #8B0000;
 }
 
 /* Navigation Buttons */
@@ -152,12 +202,13 @@ body {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
     background: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 
 /* Footer */
@@ -166,6 +217,6 @@ body {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
     font-size: 0.9rem;
+    margin-top: 2rem;
 }
