@@ -10,16 +10,9 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #f4f4f4;
 }
 
-/* Links */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Hero Section (Large) */
+/* Hero Section */
 .hero {
     position: relative;
     background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
@@ -60,23 +53,6 @@ a {
 
 .cta-button:hover {
     background: #B22222;
-}
-
-/* Hero Section (Small) */
-.hero-small {
-    background: url('https://via.placeholder.com/1920x500') center/cover no-repeat;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-small .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
 }
 
 /* Intro Section */
@@ -127,8 +103,6 @@ a {
     text-align: center;
     width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 200px;
-    overflow: visible;
 }
 
 .wine-card:hover {
