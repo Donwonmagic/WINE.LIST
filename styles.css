@@ -57,7 +57,7 @@ body {
 /* Swiper Container */
 .swiper-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px; /* Increased max width */
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -81,11 +81,13 @@ body {
 /* Wine Container */
 .wine-container {
     background: #fff;
-    padding: 1.5rem;
+    padding: 2rem; /* Increased padding */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem; /* Slightly increased margin for spacing */
+    width: 90%; /* Larger container */
+    max-width: 700px; /* Prevents overflow */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,26 +135,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 0.4rem; /* Increase spacing between emojis */
+    gap: 0.6rem; /* Increased spacing between emojis */
     font-size: 1.3rem; /* Slightly larger emojis */
     padding-left: 1rem; /* Add spacing to separate from the title */
 }
 
 .emoji-bar .filled {
-    color: #B22222; /* Bright red for filled emojis */
-    font-size: 1.5rem; /* Make filled emojis larger for emphasis */
+    color: #FF4500; /* Bright orange-red for filled emojis */
+    font-size: 1.6rem; /* Larger for emphasis */
 }
 
 .emoji-bar .empty {
-    color: #E0E0E0; /* Very light gray for empty emojis */
-    opacity: 0.6;
-    font-size: 1.3rem; /* Slightly smaller than filled emojis */
+    color: #E6E6E6; /* Very light gray for empty emojis */
+    opacity: 0.5; /* Make empty emojis more subdued */
+    font-size: 1.2rem; /* Slightly smaller than filled emojis */
 }
 
 /* Pagination Dots */
 .swiper-pagination {
     position: relative;
-    bottom: -30px; /* Move below the wine container */
+    bottom: -40px; /* Move below the wine container */
     text-align: center;
 }
 
@@ -218,10 +220,6 @@ body {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    font-size: 0.9rem;
-    margin-top: 2rem;
-}
-
     font-size: 0.9rem;
     margin-top: 2rem;
 }
