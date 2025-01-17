@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,8 @@
     <title>Red Wines | Irish Inn</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="hero-small">
@@ -20,97 +21,75 @@
     <main>
         <section class="wine-list-section">
             <h2>Explore Our Red Wines</h2>
-            <div class="wine-grid">
-                <!-- Angeline Pinot Noir -->
-                <div class="wine-card">
-                    <img src="images/Angeline_Pinot_noir.jpeg" alt="Angeline Pinot Noir" class="wine-image">
-                    <div class="wine-info">
+            
+            <!-- Swiper Carousel -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Angeline Pinot Noir -->
+                    <div class="swiper-slide">
+                        <img src="images/Angeline_Pinot_noir.jpeg" alt="Angeline Pinot Noir">
                         <h3>Angeline Pinot Noir</h3>
                         <p>California - Light-bodied with red berry and floral notes.</p>
                     </div>
-                    <a href="angeline-pinot-noir.html" class="wine-link"></a>
-                </div>
-                <!-- La Crema Pinot Noir -->
-                <div class="wine-card">
-                    <img src="images/La_Crema_Pinot_noir.jpeg" alt="La Crema Pinot Noir" class="wine-image">
-                    <div class="wine-info">
+                    <!-- La Crema Pinot Noir -->
+                    <div class="swiper-slide">
+                        <img src="images/La_Crema_Pinot_noir.jpeg" alt="La Crema Pinot Noir">
                         <h3>La Crema Pinot Noir</h3>
                         <p>Oregon - Elegant with flavors of cherry and subtle spice.</p>
                     </div>
-                    <a href="la-crema-pinot-noir.html" class="wine-link"></a>
-                </div>
-                <!-- Leese Fitch Merlot -->
-                <div class="wine-card">
-                    <img src="images/leese_fitch_merlot.jpeg" alt="Leese Fitch Merlot" class="wine-image">
-                    <div class="wine-info">
+                    <!-- Leese Fitch Merlot -->
+                    <div class="swiper-slide">
+                        <img src="images/leese_fitch_merlot.jpeg" alt="Leese Fitch Merlot">
                         <h3>Leese Fitch Merlot</h3>
                         <p>California - Plush and smooth with ripe plum and vanilla.</p>
                     </div>
-                    <a href="leese-fitch-merlot.html" class="wine-link"></a>
-                </div>
-                <!-- Jacob's Creek Shiraz -->
-                <div class="wine-card">
-                    <img src="images/Jacobs_creek.jpeg" alt="Jacob's Creek Shiraz" class="wine-image">
-                    <div class="wine-info">
+                    <!-- Jacob's Creek Shiraz -->
+                    <div class="swiper-slide">
+                        <img src="images/Jacobs_creek.jpeg" alt="Jacob's Creek Shiraz">
                         <h3>Jacob's Creek Shiraz</h3>
                         <p>Australia - Full-bodied with dark fruit and peppery spice.</p>
-                    </div> 
-                    <a href="jacobs-creek-shiraz.html" class="wine-link"></a>
-                </div>
-                <!-- Septima Malbec -->
-                <div class="wine-card">
-                    <img src="images/septima_malbec.jpeg" alt="Septima Malbec" class="wine-image">
-                    <div class="wine-info">
+                    </div>
+                    <!-- Septima Malbec -->
+                    <div class="swiper-slide">
+                        <img src="images/septima_malbec.jpeg" alt="Septima Malbec">
                         <h3>Septima Malbec</h3>
                         <p>Argentina - Lush and juicy with notes of blackberry and oak.</p>
                     </div>
-                    <a href="septima-malbec.html" class="wine-link"></a>
-                </div>
-                <!-- Francis F. Coppola Cabernet -->
-                <div class="wine-card">
-                    <img src="images/coppola_cab.jpeg" alt="Francis F. Coppola Cabernet" class="wine-image">
-                    <div class="wine-info">
+                    <!-- Francis F. Coppola Cabernet -->
+                    <div class="swiper-slide">
+                        <img src="images/coppola_cab.jpeg" alt="Francis F. Coppola Cabernet">
                         <h3>Francis F. Coppola Cabernet</h3>
                         <p>California - Bold and structured with blackberry and cocoa.</p>
                     </div>
-                    <a href="francis-coppola-cabernet.html" class="wine-link"></a>
-                </div>
-                <!-- J. Lohr Cabernet Blend -->
-                <div class="wine-card">
-                    <img src="images/J_lohR.jpeg" alt="J. Lohr Cabernet Blend" class="wine-image">
-                    <div class="wine-info">
+                    <!-- J. Lohr Cabernet Blend -->
+                    <div class="swiper-slide">
+                        <img src="images/J_lohR.jpeg" alt="J. Lohr Cabernet Blend">
                         <h3>J. Lohr Cabernet Blend</h3>
                         <p>California - Rich blend with layers of dark fruit and spice.</p>
                     </div>
-                    <a href="j-lohr-cabernet.html" class="wine-link"></a>
-                </div>
-                <!-- Frei Cabernet Sauvignon -->
-                <div class="wine-card">
-                    <img src="images/frei_cab.jpeg" alt="Frei Cabernet Sauvignon" class="wine-image">
-                    <div class="wine-info">
+                    <!-- Frei Cabernet Sauvignon -->
+                    <div class="swiper-slide">
+                        <img src="images/frei_cab.jpeg" alt="Frei Cabernet Sauvignon">
                         <h3>Frei Cabernet Sauvignon</h3>
                         <p>Sonoma, CA - Silky tannins with red currant and vanilla.</p>
                     </div>
-                    <a href="frei-cabernet.html" class="wine-link"></a>
-                </div>
-                <!-- Freemark Abbey Cabernet -->
-                <div class="wine-card">
-                    <img src="images/freemark.jpeg" alt="Freemark Abbey Cabernet" class="wine-image">
-                    <div class="wine-info">
+                    <!-- Freemark Abbey Cabernet -->
+                    <div class="swiper-slide">
+                        <img src="images/freemark.jpeg" alt="Freemark Abbey Cabernet">
                         <h3>Freemark Abbey Cabernet</h3>
                         <p>Napa, CA - Complex with blackberry, cassis, and cedar.</p>
                     </div>
-                    <a href="freemark-abbey-cabernet.html" class="wine-link"></a>
-                </div>
-                <!-- Chateau de Come Bordeaux -->
-                <div class="wine-card">
-                    <img src="images/chat_come.jpeg" alt="Chateau de Come Bordeaux" class="wine-image">
-                    <div class="wine-info">
+                    <!-- Chateau de Come Bordeaux -->
+                    <div class="swiper-slide">
+                        <img src="images/chat_come.jpeg" alt="Chateau de Come Bordeaux">
                         <h3>Chateau de Come Bordeaux</h3>
                         <p>France - Elegant with notes of black cherry and earth.</p>
                     </div>
-                    <a href="chateau-de-come-bordeaux.html" class="wine-link"></a>
                 </div>
+                <!-- Navigation and Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>
@@ -118,5 +97,23 @@
     <footer class="footer">
         <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1, // Display one slide at a time
+            spaceBetween: 20, // Space between slides
+        });
+    </script>
 </body>
 </html>
