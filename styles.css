@@ -17,16 +17,12 @@ body {
 /* Hero Section */
 .hero-small {
     position: relative;
-    background: url('https://via.placeholder.com/1920x500') center/cover no-repeat;
+    background: center/cover no-repeat;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.hero-small.parallax {
-    background-attachment: fixed;
 }
 
 .hero-small .overlay {
@@ -46,19 +42,69 @@ body {
     font-size: 1.2rem;
 }
 
+/* Specific Styles for Red Wines */
+body.red-wines {
+    background-color: #fff5f5; /* Light pinkish red background */
+}
+
+body.red-wines .hero-small {
+    background: url('https://via.placeholder.com/1920x500/ffcccc') center/cover no-repeat;
+}
+
+body.red-wines .hero-title {
+    color: #8B0000; /* Dark red */
+}
+
+body.red-wines .hero-subtitle {
+    color: #B22222; /* Brick red */
+}
+
+body.red-wines .cta-button {
+    background: #8B0000; /* Dark red */
+}
+
+body.red-wines .cta-button:hover {
+    background: #B22222; /* Brick red */
+}
+
+/* Specific Styles for White Wines */
+body.white-wines {
+    background-color: #f8fdf4; /* Soft green background */
+}
+
+body.white-wines .hero-small {
+    background: url('https://via.placeholder.com/1920x500/e6ffe6') center/cover no-repeat;
+}
+
+body.white-wines .hero-title {
+    color: #6B8E23; /* Olive green */
+}
+
+body.white-wines .hero-subtitle {
+    color: #556B2F; /* Dark olive green */
+}
+
+body.white-wines .cta-button {
+    background: #6B8E23; /* Olive green */
+}
+
+body.white-wines .cta-button:hover {
+    background: #8FBC8F; /* Light green on hover */
+}
+
 /* Section Titles */
 .wine-list-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: #8B0000;
+    color: inherit;
 }
 
 /* Swiper Container */
 .swiper-container {
     width: 100%;
-    max-width: 900px; /* Increased max width */
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -87,16 +133,15 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 2.5rem;
-    width: 90%; /* Ensure width fits within the viewport */
+    width: 90%;
     max-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    word-wrap: break-word; /* Prevent long words from overflowing */
-    overflow-wrap: break-word; /* Modern equivalent */
-    white-space: normal; /* Ensure wrapping occurs */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .wine-container:hover {
@@ -105,9 +150,9 @@ body {
 }
 
 .wine-container img {
-    max-height: 300px; /* Limit image height */
-    max-width: 100%; /* Prevent image overflow */
-    object-fit: contain; /* Maintain aspect ratio */
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 10px;
 }
@@ -118,7 +163,7 @@ body {
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
-    width: 100%; /* Ensure metrics fit inside the container */
+    width: 100%;
 }
 
 .metric {
@@ -126,7 +171,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 1rem;
-    padding-right: 1rem; /* Prevent overlap with text */
+    padding-right: 1rem;
     word-wrap: break-word;
     white-space: normal;
 }
@@ -142,26 +187,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 0.6rem; /* Increase spacing between emojis */
+    gap: 0.6rem;
     font-size: 1.4rem;
     padding-left: 1rem;
 }
 
 .emoji-bar .filled {
     color: #FF4500; /* Bright orange-red for filled emojis */
-    font-size: 1.5rem; /* Slightly larger for emphasis */
+    font-size: 1.5rem;
 }
 
 .emoji-bar .empty {
     color: #B0B0B0; /* Light gray for non-selected emojis */
-    opacity: 0.4; /* Further reduce opacity for distinction */
+    opacity: 0.4;
     font-size: 1.3rem;
 }
 
 /* Pagination Dots */
 .swiper-pagination {
     position: relative;
-    bottom: -40px; /* Move below the wine container */
+    bottom: -40px;
     text-align: center;
 }
 
@@ -202,17 +247,10 @@ body {
 .cta-button {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
-    background: #8B0000;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #B22222;
-    transform: scale(1.05);
 }
 
 .rating {
