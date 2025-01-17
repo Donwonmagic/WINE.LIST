@@ -135,15 +135,18 @@ body {
     justify-content: flex-start;
     gap: 0.4rem; /* Increase spacing between emojis */
     font-size: 1.3rem; /* Slightly larger emojis */
+    padding-left: 1rem; /* Add spacing to separate from the title */
 }
 
 .emoji-bar .filled {
     color: #B22222; /* Bright red for filled emojis */
+    font-size: 1.5rem; /* Make filled emojis larger for emphasis */
 }
 
 .emoji-bar .empty {
     color: #E0E0E0; /* Very light gray for empty emojis */
-    opacity: 0.8;
+    opacity: 0.6;
+    font-size: 1.3rem; /* Slightly smaller than filled emojis */
 }
 
 /* Pagination Dots */
@@ -215,6 +218,10 @@ body {
     color: white;
     text-align: center;
     padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
     font-size: 0.9rem;
     margin-top: 2rem;
 }
