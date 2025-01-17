@@ -15,10 +15,10 @@ body {
 }
 
 /* Hero Section */
-.hero {
+.hero, .hero-small {
     position: relative;
-    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
-    height: 100vh;
+    background: center/cover no-repeat;
+    height: 100vh; /* Fullscreen height for main hero */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,17 +26,10 @@ body {
 }
 
 .hero-small {
-    position: relative;
-    background: center/cover no-repeat;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    height: 50vh; /* Smaller height for subpages */
 }
 
-.hero .overlay,
-.hero-small .overlay {
+.hero .overlay, .hero-small .overlay {
     background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 2rem;
