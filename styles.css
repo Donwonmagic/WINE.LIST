@@ -112,7 +112,7 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Wine Metrics (Emoji-Based Sweetness, Tannins, Acidity) */
+/* Emoji-Based Metrics (Sweetness, Tannins, Acidity) */
 .wine-metrics {
     display: flex;
     flex-direction: column;
@@ -135,16 +135,25 @@ body {
 }
 
 .emoji-bar {
+    display: flex;
+    align-items: center;
     width: 70%;
-    text-align: left;
-    font-size: 1.2rem;
-    color: #8B0000;
-    white-space: nowrap;
-    overflow: hidden;
+    gap: 0.15rem; /* Space between emojis */
+    font-size: 1.3rem; /* Slightly larger emojis for emphasis */
+}
+
+.emoji-bar .filled {
+    color: #8B0000; /* Deep red for filled emojis */
 }
 
 .emoji-bar .empty {
-    color: #ddd; /* Lightened for unused emojis */
+    color: #ddd; /* Light gray for empty emojis */
+    opacity: 0.6; /* Make empty emojis visually distinct */
+    transition: color 0.3s ease;
+}
+
+.metric:hover .empty {
+    color: #ccc; /* Slightly brighten empty emojis on hover */
 }
 
 /* Wine Actions (Buttons and Ratings) */
@@ -219,3 +228,4 @@ body {
     font-size: 0.9rem;
     margin-top: 2rem;
 }
+
