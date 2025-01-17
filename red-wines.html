@@ -18,6 +18,20 @@
         </div>
     </header>
 
+autoplay: {
+    delay: 5000, // Slower transitions for better readability
+    disableOnInteraction: false, // Continue autoplay after user interaction
+    pauseOnMouseEnter: true, // Pause autoplay when hovering over the slide
+},
+    effect: 'fade', // Smooth fade transition
+fadeEffect: {
+    crossFade: true,
+},
+grabCursor: true, // Enables a hand cursor on hover
+keyboard: {
+    enabled: true, // Allow keyboard navigation
+    onlyInViewport: true, // Only respond when Swiper is visible
+},
     <main>
         <section class="wine-list-section">
             <h2>Explore Our Red Wines</h2>
@@ -99,21 +113,50 @@
     </footer>
 
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+    const swiper = new Swiper('.swiper-container', {
+        loop: true, // Enable infinite loop
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Allow clickable pagination dots
+        },
+        slidesPerView: 1, // Default to showing one slide at a time
+        spaceBetween: 20, // Add spacing between slides
+        autoplay: {
+            delay: 5000, // 5 seconds per slide
+            disableOnInteraction: false, // Continue autoplay after user interaction
+            pauseOnMouseEnter: true, // Pause autoplay when hovering over the slide
+        },
+        effect: 'fade', // Smooth fade transition
+        fadeEffect: {
+            crossFade: true, // Ensure a seamless fade between slides
+        },
+        grabCursor: true, // Enables a hand cursor on hover
+        keyboard: {
+            enabled: true, // Allow keyboard navigation
+            onlyInViewport: true, // Only respond when Swiper is visible
+        },
+        breakpoints: { // Responsive design for various screen sizes
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 10,
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
             },
-            slidesPerView: 1, // Display one slide at a time
-            spaceBetween: 20, // Space between slides
-        });
-    </script>
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+</script>
+
+
 </body>
 </html>
