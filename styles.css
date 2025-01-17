@@ -134,6 +134,74 @@ body {
     background: #555;
 }
 
+/* Swiper Container */
+.swiper-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Swiper Wrapper */
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Swiper Slides */
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    max-height: 300px; /* Uniform image height */
+    object-fit: contain; /* Prevent image distortion */
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.swiper-slide h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.swiper-slide p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #333;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    background: #333;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #8B0000;
+}
+
 /* Footer */
 .footer {
     background: #333;
