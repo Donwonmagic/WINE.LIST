@@ -1,3 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our curated selection of white wines, perfect for pairing with light and vibrant dishes.">
+    <title>White Wines | Irish Inn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="white-wines">
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="The Irish Inn Logo" class="nav-logo-img">
+        </a>
+        <span class="nav-toggle" onclick="toggleMenu()">☰</span>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="red-wines.html">Red Wines</a></li>
+            <li><a href="white-wines.html">White Wines</a></li>
+            <li><a href="sparkling-rose.html">Sparkling & Rosé</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-small parallax">
+    <div class="overlay">
+        <h1 class="hero-title">White Wine Selection</h1>
+        <p class="hero-subtitle">Discover crisp and refreshing flavors in our curated white wines.</p>
+    </div>
+</header>
+
 <!-- Main Content -->
 <main>
     <section class="wine-list-section">
@@ -7,7 +44,7 @@
         <div class="wine-grid">
             <!-- Barone Fini Pinot Grigio -->
             <div class="wine-card">
-                <img src="images/barone_fini.jpeg" alt="Barone Fini Pinot Grigio">
+                <img src="images/barone_fini_pinot_grigio.jpeg" alt="Barone Fini Pinot Grigio">
                 <h3>Barone Fini Pinot Grigio</h3>
                 <p>Italy - Crisp and refreshing with notes of pear and apple.</p>
                 <div class="ratings-container">
@@ -31,7 +68,7 @@
                     </div>
                 </div>
                 <div class="contest-details">
-                    <strong>C</strong> Rated 90/100 by Wine Spectator.
+                    <strong>Contest Rating:</strong> Rated 90/100 by Wine Spectator.
                 </div>
                 <div class="hover-details hidden">
                     <strong>Sweetness:</strong> Lightly dry with a hint of pear.<br>
@@ -43,7 +80,7 @@
 
             <!-- Nobilo Sauvignon Blanc -->
             <div class="wine-card">
-                <img src="images/nobilo_sb.jpeg" alt="Nobilo Sauvignon Blanc">
+                <img src="images/nobilo_sauv_blanc.jpeg" alt="Nobilo Sauvignon Blanc">
                 <h3>Nobilo Sauvignon Blanc</h3>
                 <p>New Zealand - Vibrant with tropical fruit and herbal notes.</p>
                 <div class="ratings-container">
@@ -67,7 +104,7 @@
                     </div>
                 </div>
                 <div class="contest-details">
-                    <strong></strong> Rated 91/100 by Decanter.
+                    <strong>Contest Rating:</strong> Rated 91/100 by Decanter.
                 </div>
                 <div class="hover-details hidden">
                     <strong>Sweetness:</strong> Very dry and crisp.<br>
@@ -79,7 +116,7 @@
 
             <!-- Matua Sauvignon Blanc -->
             <div class="wine-card">
-                <img src="images/Matua.jpeg" alt="Matua Sauvignon Blanc">
+                <img src="images/matua_sauv_blanc.jpeg" alt="Matua Sauvignon Blanc">
                 <h3>Matua Sauvignon Blanc</h3>
                 <p>New Zealand - Zesty and fresh with passionfruit and citrus.</p>
                 <div class="ratings-container">
@@ -103,7 +140,7 @@
                     </div>
                 </div>
                 <div class="contest-details">
-                    <strong></strong> Rated 92/100 by James Suckling.
+                    <strong>Contest Rating:</strong> Rated 92/100 by James Suckling.
                 </div>
                 <div class="hover-details hidden">
                     <strong>Sweetness:</strong> Bone dry with citrus notes.<br>
@@ -113,114 +150,7 @@
                 </div>
             </div>
 
-            <!-- Remaining 3 Wines -->
-            <!-- Whitehaven Sauvignon Blanc -->
-            <div class="wine-card">
-                <img src="images/whitehaven.jpeg" alt="Whitehaven Sauvignon Blanc">
-                <h3>Whitehaven Sauvignon Blanc</h3>
-                <p>New Zealand - Lively with tropical fruit and crisp citrus.</p>
-                <div class="ratings-container">
-                    <div class="metric">
-                        <span>Sweetness</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
-                        </div>
-                    </div>
-                    <div class="metric">
-                        <span>Tannins</span>
-                        <div class="emoji-bar">
-                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
-                        </div>
-                    </div>
-                    <div class="metric">
-                        <span>Acidity</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contest-details">
-                    <strong></strong> Rated 93/100 by Wine Enthusiast.
-                </div>
-                <div class="hover-details hidden">
-                    <strong>Sweetness:</strong> Bone dry with citrus and tropical notes.<br>
-                    <strong>Tannins:</strong> None present.<br>
-                    <strong>Acidity:</strong> Refreshing and zesty.<br>
-                    A vibrant Sauvignon Blanc perfect for seafood, salads, or as an aperitif.
-                </div>
-            </div>
-
-            <!-- Josh Chardonnay -->
-            <div class="wine-card">
-                <img src="images/josh_chard.jpeg" alt="Josh Chardonnay">
-                <h3>Josh Chardonnay</h3>
-                <p>California - Creamy with hints of tropical fruit and vanilla.</p>
-                <div class="ratings-container">
-                    <div class="metric">
-                        <span>Sweetness</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
-                        </div>
-                    </div>
-                    <div class="metric">
-                        <span>Tannins</span>
-                        <div class="emoji-bar">
-                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
-                        </div>
-                    </div>
-                    <div class="metric">
-                        <span>Acidity</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contest-details">
-                    <strong></strong> Rated 92/100 by Wine Advocate.
-                </div>
-                <div class="hover-details hidden">
-                    <strong>Sweetness:</strong> Lightly fruity with creamy undertones.<br>
-                    <strong>Tannins:</strong> None present.<br>
-                    <strong>Acidity:</strong> Smooth and balanced.<br>
-                    A rich Chardonnay with tropical fruit and vanilla flavors. Pairs beautifully with roasted chicken or creamy pasta.
-                </div>
-            </div>
-
-            <!-- Rombauer Chardonnay -->
-            <div class="wine-card">
-                <img src="images/rombauer.jpeg" alt="Rombauer Chardonnay">
-                <h3>Rombauer Chardonnay</h3>
-                <p>California - Buttery with notes of peach and crème brûlée.</p>
-                <div class="ratings-container">
-                    <div class="metric">
-                        <span>Sweetness</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span>
-                        </div>
-                    </div>
-                    <div class="metric">
-                        <span>Tannins</span>
-                        <div class="emoji-bar">
-                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
-                        </div>
-                    </div>
-                    <div class="metric">
-                        <span>Acidity</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contest-details">
-                    <strong></strong> Rated 95/100 by Wine Enthusiast.
-                </div>
-                <div class="hover-details hidden">
-                    <strong>Sweetness:</strong> Moderately sweet with ripe peach notes.<br>
-                    <strong>Tannins:</strong> None present.<br>
-                    <strong>Acidity:</strong> Smooth and creamy.<br>
-                    A bold and buttery Chardonnay with notes of peach and crème brûlée. Perfect for rich seafood dishes or creamy risotto.
-                </div>
-            </div>
+            <!-- Add Remaining 4 Wines -->
         </div>
     </section>
 </main>
@@ -258,3 +188,4 @@
 
 </body>
 </html>
+
