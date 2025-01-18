@@ -46,7 +46,7 @@
             <h2 class="section-title">Our Wine Selection</h2>
             <div class="wine-categories">
                 <!-- Red Wines -->
-                <div class="wine-card wine-red" data-detail="Rich and bold, our red wines pair beautifully with hearty dishes.">
+                <div class="wine-card wine-red" data-detail="Sweetness 🍇🍇🍇 - Moderately sweet.;Tannins 🍷🍷🍷🍷 - Bold and structured.;Acidity 🍋🍋🍋 - Balanced acidity.">
                     <img src="images/red-wines.jpeg" alt="Red Wines">
                     <div class="wine-card-overlay">
                         <h3>Red Wines</h3>
@@ -57,7 +57,7 @@
                 </div>
 
                 <!-- White Wines -->
-                <div class="wine-card wine-white" data-detail="Crisp and refreshing, our white wines complement vibrant and fresh dishes.">
+                <div class="wine-card wine-white" data-detail="Sweetness 🍇🍇🍇🍇 - Fruity and semi-sweet.;Tannins 🍷 - Very low tannins.;Acidity 🍋🍋🍋🍋 - Bright and refreshing.">
                     <img src="images/white-wines.jpeg" alt="White Wines">
                     <div class="wine-card-overlay">
                         <h3>White Wines</h3>
@@ -68,7 +68,7 @@
                 </div>
 
                 <!-- Sparkling & Rosé -->
-                <div class="wine-card wine-rose" data-detail="Delicate and effervescent, our sparkling and rosé wines are perfect for celebrations or casual moments.">
+                <div class="wine-card wine-rose" data-detail="Sweetness 🍇🍇🍇🍇 - Sweet and fruity.;Tannins 🍷 - Negligible tannins.;Acidity 🍋🍋🍋🍋🍋 - Vibrant and effervescent.">
                     <img src="images/sparkling-rose.jpeg" alt="Sparkling and Rosé Wines">
                     <div class="wine-card-overlay">
                         <h3>Sparkling Wines & Rosé</h3>
@@ -94,12 +94,12 @@
             navLinks.classList.toggle('show');
         }
 
-        // Display Descriptions on Hover or Click
+        // Display Ratings on Hover or Click
         document.querySelectorAll('.wine-card').forEach((card) => {
             card.addEventListener('mouseenter', () => {
                 const details = card.querySelector('.hover-details');
                 const description = card.getAttribute('data-detail');
-                details.innerHTML = description;
+                details.innerHTML = description.replace(/;/g, '<br>');
                 details.classList.remove('hidden');
             });
 
@@ -111,7 +111,7 @@
             card.addEventListener('click', () => {
                 const details = card.querySelector('.hover-details');
                 const description = card.getAttribute('data-detail');
-                details.innerHTML = description;
+                details.innerHTML = description.replace(/;/g, '<br>');
                 details.classList.toggle('hidden');
             });
         });
