@@ -35,27 +35,47 @@
     <!-- Main Content -->
     <main>
         <section id="intro" class="intro-section">
-            <h2>A New Way to Enjoy Wine</h2>
-            <p>Discover a world of flavors with our expertly curated wine selection.</p>
+            <h2 class="intro-title">A New Way to Explore Wine</h2>
+            <p class="intro-text">
+                Discover a world of flavors with our expertly curated wine selection. Whether you're seeking a bold red, a crisp white, or a sparkling rosé, our collection is designed for every palate. Scroll down to begin your journey!
+            </p>
         </section>
 
+        <!-- Wine Categories Section -->
         <section id="wine-list" class="wine-section">
-            <h2>Our Wines</h2>
+            <h2 class="section-title">Our Wine Selection</h2>
             <div class="wine-categories">
-                <div class="wine-card">
-                    <h3>Red Wines</h3>
-                    <p>Rich and bold, our red wines offer depth and complexity to pair with hearty dishes.</p>
-                    <a href="red-wines.html" class="wine-link">Explore Red Wines</a>
+                <!-- Red Wines -->
+                <div class="wine-card wine-red" data-detail="Rich and bold, our red wines pair beautifully with hearty dishes.">
+                    <img src="images/red-wines.jpeg" alt="Red Wines">
+                    <div class="wine-card-overlay">
+                        <h3>Red Wines</h3>
+                        <p>Explore the bold flavors of our curated red wines.</p>
+                        <a href="red-wines.html" class="wine-link">Explore Red Wines</a>
+                    </div>
+                    <div class="hover-details hidden"></div>
                 </div>
-                <div class="wine-card">
-                    <h3>White Wines</h3>
-                    <p>Crisp and refreshing, our white wines complement light and vibrant flavors.</p>
-                    <a href="white-wines.html" class="wine-link">Explore White Wines</a>
+
+                <!-- White Wines -->
+                <div class="wine-card wine-white" data-detail="Crisp and refreshing, our white wines complement vibrant and fresh dishes.">
+                    <img src="images/white-wines.jpeg" alt="White Wines">
+                    <div class="wine-card-overlay">
+                        <h3>White Wines</h3>
+                        <p>Discover the fresh and zesty notes of our white wines.</p>
+                        <a href="white-wines.html" class="wine-link">Explore White Wines</a>
+                    </div>
+                    <div class="hover-details hidden"></div>
                 </div>
-                <div class="wine-card">
-                    <h3>Sparkling & Rosé</h3>
-                    <p>Delicate and effervescent, perfect for celebrations or casual pairing.</p>
-                    <a href="sparkling-rose.html" class="wine-link">Explore Sparkling & Rosé</a>
+
+                <!-- Sparkling & Rosé -->
+                <div class="wine-card wine-rose" data-detail="Delicate and effervescent, our sparkling and rosé wines are perfect for celebrations or casual moments.">
+                    <img src="images/sparkling-rose.jpeg" alt="Sparkling and Rosé Wines">
+                    <div class="wine-card-overlay">
+                        <h3>Sparkling Wines & Rosé</h3>
+                        <p>Delicate and versatile, perfect for any occasion.</p>
+                        <a href="sparkling-rose.html" class="wine-link">Explore Sparkling & Rosé Wines</a>
+                    </div>
+                    <div class="hover-details hidden"></div>
                 </div>
             </div>
         </section>
@@ -67,8 +87,34 @@
     </footer>
 
     <!-- JavaScript -->
-    
-<script src="scripts.js"></script>
-    
+    <script>
+        // Toggle Menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+
+        // Display Descriptions on Hover or Click
+        document.querySelectorAll('.wine-card').forEach((card) => {
+            card.addEventListener('mouseenter', () => {
+                const details = card.querySelector('.hover-details');
+                const description = card.getAttribute('data-detail');
+                details.innerHTML = description;
+                details.classList.remove('hidden');
+            });
+
+            card.addEventListener('mouseleave', () => {
+                const details = card.querySelector('.hover-details');
+                details.classList.add('hidden');
+            });
+
+            card.addEventListener('click', () => {
+                const details = card.querySelector('.hover-details');
+                const description = card.getAttribute('data-detail');
+                details.innerHTML = description;
+                details.classList.toggle('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
