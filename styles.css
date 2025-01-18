@@ -48,27 +48,54 @@ body {
 
 .nav-links {
     list-style: none;
-    display: flex;
-    gap: 2rem;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Optional fade-in animation */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 999;
+    transform: translateY(-10px); /* Initial position for animation */
+    opacity: 0; /* Hidden by default */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.nav-links li {
-    display: inline;
+.nav-links.show {
+    display: flex; /* Show menu */
+    transform: translateY(0); /* Slide in */
+    opacity: 1; /* Fade in */
 }
 
-.nav-links a {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
+.nav-toggle {
+    display: block; /* Visible on mobile screens */
+    font-size: 1.5rem;
+    cursor: pointer;
     color: #8B0000;
+    transition: transform 0.3s ease;
 }
+
+.nav-toggle:hover {
+    transform: rotate(90deg); /* Rotate the toggle icon on hover */
+}
+
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex; /* Always visible on larger screens */
+        flex-direction: row;
+        position: static; /* Reset positioning */
+        opacity: 1;
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    .nav-toggle {
+        display: none; /* Hide toggle button */
+    }
+}
+
 
 /* Responsive Design for Navbar */
 @media (max-width: 768px) {
