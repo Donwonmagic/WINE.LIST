@@ -231,11 +231,11 @@ body {
 }
 
 .wine-card img {
-    max-height: 200px;
-    object-fit: contain;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    width: 100%; /* Makes the image fill its container */
+    max-width: 150px; /* Limits how large the image can get */
+    height: auto; /* Keeps the aspect ratio */
+    margin: 0 auto; /* Centers the image within the card */
+    object-fit: contain; /* Ensures the image doesn't stretch */
 }
 
 .wine-card img:hover {
