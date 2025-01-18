@@ -268,38 +268,7 @@
         <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
     </footer>
     
-<script>
-    // Toggle Menu
-    function toggleMenu() {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('show');
-    }
-
-    // Change Navbar on Scroll
-    window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-</script>
+<script src="scripts.js"></script>
     
-    <script>
-        // Show detailed notes on hover
-        document.querySelectorAll('.wine-card').forEach((card) => {
-            card.addEventListener('mouseenter', () => {
-                const detailsContainer = card.querySelector('.hover-details');
-                const details = card.getAttribute('data-detail').split(';').join('<br>');
-                detailsContainer.innerHTML = details;
-                detailsContainer.classList.remove('hidden');
-            });
-            card.addEventListener('mouseleave', () => {
-                const detailsContainer = card.querySelector('.hover-details');
-                detailsContainer.classList.add('hidden');
-            });
-        });
-    </script>
 </body>
 </html>
