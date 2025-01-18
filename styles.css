@@ -58,14 +58,19 @@ body {
 
 /* Hamburger Menu */
 .nav-toggle {
+    position: absolute; /* Take it out of the center alignment flow */
+    right: 1.5rem; /* Push it to the right */
     font-size: 2rem;
     cursor: pointer;
     color: #8B0000;
     display: block;
-    position: relative;
-    transition: transform 0.3s ease, background 0.3s ease;
     border: none;
     background: none;
+    transition: transform 0.3s ease;
+}
+
+.nav-toggle:hover {
+    transform: rotate(90deg);
 }
 
 .nav-toggle span {
