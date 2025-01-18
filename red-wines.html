@@ -10,6 +10,21 @@
 </head>
 
 <body class="red-wines">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo">The Irish Inn</a>
+            <span class="nav-toggle" onclick="toggleMenu()">☰</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="red-wines.html">Red Wines</a></li>
+                <li><a href="white-wines.html">White Wines</a></li>
+                <li><a href="sparkling-rose.html">Sparkling & Rosé</a></li>
+            </ul>
+        </div>
+    </nav>
+    
     <!-- Hero Section -->
     <header class="hero-small parallax">
         <div class="overlay">
@@ -252,7 +267,15 @@
     <footer class="footer">
         <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
     </footer>
-
+    
+<!-- JavaScript for Navbar -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+    
     <script>
         // Show detailed notes on hover
         document.querySelectorAll('.wine-card').forEach((card) => {
