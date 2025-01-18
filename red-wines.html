@@ -268,13 +268,23 @@
         <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
     </footer>
     
-<!-- JavaScript for Navbar -->
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('show');
+<script>
+    // Toggle Menu
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
+
+    // Change Navbar on Scroll
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
-    </script>
+    });
+</script>
     
     <script>
         // Show detailed notes on hover
