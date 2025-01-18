@@ -46,36 +46,33 @@
             <h2 class="section-title">Our Wine Selection</h2>
             <div class="wine-categories">
                 <!-- Red Wines -->
-                <div class="wine-card wine-red" data-detail="Sweetness 🍇🍇🍇 - Moderately sweet.;Tannins 🍷🍷🍷🍷 - Bold and structured.;Acidity 🍋🍋🍋 - Balanced acidity.">
+                <div class="wine-card wine-red">
                     <img src="images/red-wines.jpeg" alt="Red Wines">
                     <div class="wine-card-overlay">
                         <h3>Red Wines</h3>
-                        <p>Explore the bold flavors of our curated red wines.</p>
+                        <p>Rich and bold, our red wines pair beautifully with hearty dishes.</p>
                         <a href="red-wines.html" class="wine-link">Explore Red Wines</a>
                     </div>
-                    <div class="hover-details hidden"></div>
                 </div>
 
                 <!-- White Wines -->
-                <div class="wine-card wine-white" data-detail="Sweetness 🍇🍇🍇🍇 - Fruity and semi-sweet.;Tannins 🍷 - Very low tannins.;Acidity 🍋🍋🍋🍋 - Bright and refreshing.">
+                <div class="wine-card wine-white">
                     <img src="images/white-wines.jpeg" alt="White Wines">
                     <div class="wine-card-overlay">
                         <h3>White Wines</h3>
-                        <p>Discover the fresh and zesty notes of our white wines.</p>
+                        <p>Crisp and refreshing, our white wines complement vibrant and fresh dishes.</p>
                         <a href="white-wines.html" class="wine-link">Explore White Wines</a>
                     </div>
-                    <div class="hover-details hidden"></div>
                 </div>
 
                 <!-- Sparkling & Rosé -->
-                <div class="wine-card wine-rose" data-detail="Sweetness 🍇🍇🍇🍇 - Sweet and fruity.;Tannins 🍷 - Negligible tannins.;Acidity 🍋🍋🍋🍋🍋 - Vibrant and effervescent.">
+                <div class="wine-card wine-rose">
                     <img src="images/sparkling-rose.jpeg" alt="Sparkling and Rosé Wines">
                     <div class="wine-card-overlay">
                         <h3>Sparkling Wines & Rosé</h3>
-                        <p>Delicate and versatile, perfect for any occasion.</p>
-                        <a href="sparkling-rose.html" class="wine-link">Explore Sparkling & Rosé Wines</a>
+                        <p>Delicate and versatile, perfect for any occasion or celebration.</p>
+                        <a href="sparkling-rose.html" class="wine-link">Explore Sparkling & Rosé</a>
                     </div>
-                    <div class="hover-details hidden"></div>
                 </div>
             </div>
         </section>
@@ -93,28 +90,6 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('show');
         }
-
-        // Display Ratings on Hover or Click
-        document.querySelectorAll('.wine-card').forEach((card) => {
-            card.addEventListener('mouseenter', () => {
-                const details = card.querySelector('.hover-details');
-                const description = card.getAttribute('data-detail');
-                details.innerHTML = description.replace(/;/g, '<br>');
-                details.classList.remove('hidden');
-            });
-
-            card.addEventListener('mouseleave', () => {
-                const details = card.querySelector('.hover-details');
-                details.classList.add('hidden');
-            });
-
-            card.addEventListener('click', () => {
-                const details = card.querySelector('.hover-details');
-                const description = card.getAttribute('data-detail');
-                details.innerHTML = description.replace(/;/g, '<br>');
-                details.classList.toggle('hidden');
-            });
-        });
     </script>
 </body>
 </html>
