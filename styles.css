@@ -39,30 +39,21 @@ body {
 }
 
 .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #8B0000;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-.nav-logo:hover {
-    color: #B22222;
-    transform: scale(1.1); /* Slightly enlarge on hover */
+.nav-logo img {
+    height: 50px; /* Adjust logo height */
+    margin-right: 0.5rem;
+    object-fit: contain;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
-    opacity: 0; /* Hidden by default on mobile */
-    transform: translateY(-10px); /* Start above */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth slide-in and fade-in */
-}
-
-.nav-links li {
-    display: inline;
 }
 
 .nav-links a {
@@ -83,45 +74,39 @@ body {
     display: none;
 }
 
-.nav-links.show {
-    display: flex;
-    flex-direction: column; /* Stack links on mobile */
-    background: white;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    z-index: 999;
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.nav-toggle {
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #8B0000;
-    transition: transform 0.3s ease;
-    display: block;
-}
-
-.nav-toggle:hover {
-    transform: rotate(90deg);
-}
-
-/* Desktop Styles */
-@media (min-width: 769px) {
+@media (max-width: 768px) {
     .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        z-index: 999;
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .nav-links.show {
         display: flex;
         transform: translateY(0);
         opacity: 1;
-        position: static;
-        box-shadow: none;
     }
 
     .nav-toggle {
-        display: none;
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #8B0000;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-toggle:hover {
+        transform: rotate(90deg);
     }
 }
 
@@ -179,7 +164,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Wine Section */
+/* Wine Grid Section */
 .wine-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -241,7 +226,30 @@ body {
     display: block;
 }
 
-/* Keyframes for Animations */
+/* Category-Specific Styles */
+body.red-wines {
+    background-color: #fff5f5;
+}
+
+body.white-wines {
+    background-color: #f8fdf4;
+}
+
+body.sparkling-rose {
+    background-color: #fdf4f8;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -269,14 +277,4 @@ body {
     50% {
         transform: translateY(-10px);
     }
-}
-
-/* Footer */
-.footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    margin-top: 2rem;
 }
