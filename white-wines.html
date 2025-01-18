@@ -201,20 +201,7 @@
         <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Show detailed notes on hover
-        document.querySelectorAll('.wine-card').forEach((card) => {
-            card.addEventListener('mouseenter', () => {
-                const detailsContainer = card.querySelector('.hover-details');
-                const details = card.getAttribute('data-detail').split(';').join('<br>');
-                detailsContainer.innerHTML = details;
-                detailsContainer.classList.remove('hidden');
-            });
-            card.addEventListener('mouseleave', () => {
-                const detailsContainer = card.querySelector('.hover-details');
-                detailsContainer.classList.add('hidden');
-            });
-        });
-    </script>
+<script src="scripts.js"></script>
+
 </body>
 </html>
