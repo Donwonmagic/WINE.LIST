@@ -11,6 +11,7 @@
 
 <body class="red-wines">
 
+<!-- Navbar -->
 <nav class="navbar">
     <div class="navbar-container">
         <a href="index.html" class="nav-logo">
@@ -26,279 +27,383 @@
     </div>
 </nav>
 
-    
-    <!-- Hero Section -->
-    <header class="hero-small parallax">
-        <div class="overlay">
-            <h1 class="hero-title">Red Wine Selection</h1>
-            <p class="hero-subtitle">Immerse yourself in the rich and bold flavors of our curated red wines.</p>
-        </div>
-    </header>
+<!-- Hero Section -->
+<header class="hero-small parallax">
+    <div class="overlay">
+        <h1 class="hero-title">Red Wine Selection</h1>
+        <p class="hero-subtitle">Immerse yourself in the rich and bold flavors of our curated red wines.</p>
+    </div>
+</header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="wine-list-section">
-            <h2>Explore Our Red Wines</h2>
+<!-- Main Content -->
+<main>
+    <section class="wine-list-section">
+        <h2>Explore Our Red Wines</h2>
 
-            <!-- Wine Grid -->
-            <div class="wine-grid">
-                <!-- Angeline Pinot Noir -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry with subtle berry notes.;Tannins 🍷🍷🍷 - Soft and approachable.;Acidity 🍋🍋🍋 - Balanced and food-friendly.">
-                    <img src="images/Angeline_Pinot_noir.jpeg" alt="Angeline Pinot Noir">
-                    <h3>Angeline Pinot Noir</h3>
-                    <p>California - Light-bodied with red berry and floral notes.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋</div>
+        <!-- Wine Grid -->
+        <div class="wine-grid">
+            <!-- Angeline Pinot Noir -->
+            <div class="wine-card">
+                <img src="images/Angeline_Pinot_noir.jpeg" alt="Angeline Pinot Noir">
+                <h3>Angeline Pinot Noir</h3>
+                <p>California - Light-bodied with red berry and floral notes.</p>
+                <div class="ratings-container">
+                    <div class="metric">
+                        <span>Sweetness</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
                         </div>
                     </div>
-                    <div class="hover-details hidden"></div>
+                    <div class="metric">
+                        <span>Tannins</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Acidity</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- La Crema Pinot Noir -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry with cherry and spice.;Tannins 🍷🍷🍷 - Medium with a smooth finish.;Acidity 🍋🍋🍋🍋 - Vibrant acidity.">
-                    <img src="images/La_Crema_Pinot_noir.jpeg" alt="La Crema Pinot Noir">
-                    <h3>La Crema Pinot Noir</h3>
-                    <p>Oregon - Elegant with flavors of cherry and subtle spice.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
+                <div class="contest-details">
+                    <strong>Contest Rating:</strong> Rated 92/100 by Wine Enthusiast.
                 </div>
-
-                <!-- Leese Fitch Merlot -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry with ripe plum flavors.;Tannins 🍷🍷🍷🍷 - Structured but soft.;Acidity 🍋🍋🍋 - Moderate acidity.">
-                    <img src="images/leese_fitch_merlot.jpeg" alt="Leese Fitch Merlot">
-                    <h3>Leese Fitch Merlot</h3>
-                    <p>California - Plush and smooth with ripe plum and vanilla.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- Jacob's Creek Shiraz -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry with dark fruit notes.;Tannins 🍷🍷🍷🍷 - Firm, typical of Shiraz.;Acidity 🍋🍋🍋 - Balanced acidity.">
-                    <img src="images/Jacobs_creek.jpeg" alt="Jacob's Creek Shiraz">
-                    <h3>Jacob's Creek Shiraz</h3>
-                    <p>Australia - Full-bodied with dark fruit and peppery spice.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- Septima Malbec -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇🍇 - Slightly fruity with juicy blackberry.;Tannins 🍷🍷🍷🍷 - Smooth and rich.;Acidity 🍋🍋🍋 - Moderate acidity.">
-                    <img src="images/septima_malbec.jpeg" alt="Septima Malbec">
-                    <h3>Septima Malbec</h3>
-                    <p>Argentina - Lush and juicy with notes of blackberry and oak.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- Francis F. Coppola Cabernet -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry, with subtle fruit sweetness.;Tannins 🍷🍷🍷🍷🍷 - Bold and structured.;Acidity 🍋🍋🍋 - Balanced acidity.">
-                    <img src="images/coppola_cab.jpeg" alt="Francis F. Coppola Cabernet">
-                    <h3>Francis F. Coppola Cabernet</h3>
-                    <p>California - Bold and structured with blackberry and cocoa.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- J. Lohr Cabernet Blend -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry, with layered dark fruit.;Tannins 🍷🍷🍷🍷 - Firm and well-rounded.;Acidity 🍋🍋🍋 - Moderate acidity.">
-                    <img src="images/J_LohR.jpeg" alt="J. Lohr Cabernet Blend">
-                    <h3>J. Lohr Cabernet Blend</h3>
-                    <p>California - Rich blend with layers of dark fruit and spice.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- Frei Cabernet Sauvignon -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry, with a hint of currant sweetness.;Tannins 🍷🍷🍷🍷 - Silky but firm.;Acidity 🍋🍋🍋 - Balanced acidity.">
-                    <img src="images/frei_cab.jpeg" alt="Frei Cabernet Sauvignon">
-                    <h3>Frei Cabernet Sauvignon</h3>
-                    <p>Sonoma, CA - Silky tannins with red currant and vanilla.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- Freemark Abbey Cabernet -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Classic dry Cabernet.;Tannins 🍷🍷🍷🍷🍷 - Bold and age-worthy.;Acidity 🍋🍋🍋🍋 - Fresh and lively.">
-                    <img src="images/freemark.jpeg" alt="Freemark Abbey Cabernet">
-                    <h3>Freemark Abbey Cabernet</h3>
-                    <p>Napa, CA - Complex with blackberry, cassis, and cedar.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- Chateau de Come Bordeaux -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry, typical of Bordeaux.;Tannins 🍷🍷🍷🍷🍷 - Firm, with potential to soften with age.;Acidity 🍋🍋🍋🍋 - High acidity for aging potential.">
-                    <img src="images/chat_come.jpeg" alt="Chateau de Come Bordeaux">
-                    <h3>Chateau de Come Bordeaux</h3>
-                    <p>France - Elegant with notes of black cherry and earth.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷🍷🍷🍷🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
+                <div class="hover-details hidden">
+                    A smooth, light-bodied profile with subtle berry and floral notes, perfect for lighter fare.
                 </div>
             </div>
-        </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
-    </footer>
-    
- <script>
-        // Toggle Menu
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('show');
-        }
+            <!-- La Crema Pinot Noir -->
+            <div class="wine-card">
+                <img src="images/La_Crema_Pinot_noir.jpeg" alt="La Crema Pinot Noir">
+                <h3>La Crema Pinot Noir</h3>
+                <p>Oregon - Elegant with flavors of cherry and subtle spice.</p>
+                <div class="ratings-container">
+                    <div class="metric">
+                        <span>Sweetness</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Tannins</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Acidity</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contest-details">
+                    <strong>Contest Rating:</strong> Rated 90/100 by Wine Spectator.
+                </div>
+                <div class="hover-details hidden">
+                    Vibrant acidity and hints of cherry make it a perfect companion for salmon or roasted chicken.
+                </div>
+            </div>
 
-        // Display Ratings on Hover or Click
-        document.querySelectorAll('.wine-card').forEach((card) => {
-            card.addEventListener('mouseenter', () => {
-                const details = card.querySelector('.hover-details');
-                const description = card.getAttribute('data-detail');
-                details.innerHTML = description.replace(/;/g, '<br>');
-                details.classList.remove('hidden');
-            });
+            <!-- Leese Fitch Merlot -->
+            <div class="wine-card">
+                <img src="images/leese_fitch_merlot.jpeg" alt="Leese Fitch Merlot">
+                <h3>Leese Fitch Merlot</h3>
+                <p>California - Plush and smooth with ripe plum and vanilla.</p>
+                <div class="ratings-container">
+                    <div class="metric">
+                        <span>Sweetness</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Tannins</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Acidity</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contest-details">
+                    <strong>Contest Rating:</strong> Rated 89/100 by Wine Spectator.
+                </div>
+                <div class="hover-details hidden">
+                    A rich Merlot with ripe plum flavors and a soft, velvety finish.
+                </div>
+            </div>
 
-            card.addEventListener('mouseleave', () => {
-                const details = card.querySelector('.hover-details');
-                details.classList.add('hidden');
-            });
+         <!-- Jacob's Creek Shiraz -->
+<div class="wine-card">
+    <img src="images/Jacobs_creek.jpeg" alt="Jacob's Creek Shiraz">
+    <h3>Jacob's Creek Shiraz</h3>
+    <p>Australia - Full-bodied with dark fruit and peppery spice.</p>
+    <div class="ratings-container">
+        <div class="metric">
+            <span>Sweetness</span>
+            <div class="emoji-bar">
+                <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Tannins</span>
+            <div class="emoji-bar">
+                <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Acidity</span>
+            <div class="emoji-bar">
+                <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+            </div>
+        </div>
+    </div>
+    <div class="contest-details">
+        <strong>Contest Rating:</strong> Rated 88/100 by Decanter.
+    </div>
+    <div class="hover-details hidden">
+        A bold Shiraz with rich dark fruit flavors and a peppery finish. Ideal for grilled meats and hearty stews.
+    </div>
+</div>
 
-            card.addEventListener('click', () => {
-                const details = card.querySelector('.hover-details');
-                const description = card.getAttribute('data-detail');
-                details.innerHTML = description.replace(/;/g, '<br>');
-                details.classList.toggle('hidden');
-            });
+<!-- Septima Malbec -->
+<div class="wine-card">
+    <img src="images/septima_malbec.jpeg" alt="Septima Malbec">
+    <h3>Septima Malbec</h3>
+    <p>Argentina - Lush and juicy with notes of blackberry and oak.</p>
+    <div class="ratings-container">
+        <div class="metric">
+            <span>Sweetness</span>
+            <div class="emoji-bar">
+                <span class="filled">🍇</span><span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Tannins</span>
+            <div class="emoji-bar">
+                <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Acidity</span>
+            <div class="emoji-bar">
+                <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+            </div>
+        </div>
+    </div>
+    <div class="contest-details">
+        <strong>Contest Rating:</strong> Rated 91/100 by James Suckling.
+    </div>
+    <div class="hover-details hidden">
+        A rich Malbec with juicy blackberry notes and a touch of oak. Perfect for barbecue or roasted vegetables.
+    </div>
+</div>
+
+<!-- Francis F. Coppola Cabernet -->
+<div class="wine-card">
+    <img src="images/coppola_cab.jpeg" alt="Francis F. Coppola Cabernet">
+    <h3>Francis F. Coppola Cabernet</h3>
+    <p>California - Bold and structured with blackberry and cocoa.</p>
+    <div class="ratings-container">
+        <div class="metric">
+            <span>Sweetness</span>
+            <div class="emoji-bar">
+                <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Tannins</span>
+            <div class="emoji-bar">
+                <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Acidity</span>
+            <div class="emoji-bar">
+                <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+            </div>
+        </div>
+    </div>
+    <div class="contest-details">
+        <strong>Contest Rating:</strong> Rated 94/100 by Wine Advocate.
+    </div>
+    <div class="hover-details hidden">
+        A powerful Cabernet with bold blackberry and cocoa flavors. Pair with red meats or aged cheeses.
+    </div>
+</div>
+
+<!-- J. Lohr Cabernet Blend -->
+<div class="wine-card">
+    <img src="images/J_LohR.jpeg" alt="J. Lohr Cabernet Blend">
+    <h3>J. Lohr Cabernet Blend</h3>
+    <p>California - Rich blend with layers of dark fruit and spice.</p>
+    <div class="ratings-container">
+        <div class="metric">
+            <span>Sweetness</span>
+            <div class="emoji-bar">
+                <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Tannins</span>
+            <div class="emoji-bar">
+                <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Acidity</span>
+            <div class="emoji-bar">
+                <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+            </div>
+        </div>
+    </div>
+    <div class="contest-details">
+        <strong>Contest Rating:</strong> Rated 93/100 by James Suckling.
+    </div>
+    <div class="hover-details hidden">
+        A rich and layered blend with dark fruit and a touch of spice. Pairs wonderfully with hearty dishes.
+    </div>
+</div>
+
+<!-- Frei Cabernet Sauvignon -->
+<div class="wine-card">
+    <img src="images/frei_cab.jpeg" alt="Frei Cabernet Sauvignon">
+    <h3>Frei Cabernet Sauvignon</h3>
+    <p>Sonoma, CA - Silky tannins with red currant and vanilla.</p>
+    <div class="ratings-container">
+        <div class="metric">
+            <span>Sweetness</span>
+            <div class="emoji-bar">
+                <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Tannins</span>
+            <div class="emoji-bar">
+                <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Acidity</span>
+            <div class="emoji-bar">
+                <span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+            </div>
+        </div>
+    </div>
+    <div class="contest-details">
+        <strong>Contest Rating:</strong> Rated 90/100 by Wine Spectator.
+    </div>
+    <div class="hover-details hidden">
+        A silky and balanced Cabernet with currant and vanilla notes. Perfect with roasted meats or creamy pasta.
+    </div>
+</div>
+
+<!-- Freemark Abbey Cabernet -->
+<div class="wine-card">
+    <img src="images/freemark.jpeg" alt="Freemark Abbey Cabernet">
+    <h3>Freemark Abbey Cabernet</h3>
+    <p>Napa, CA - Complex with blackberry, cassis, and cedar.</p>
+    <div class="ratings-container">
+        <div class="metric">
+            <span>Sweetness</span>
+            <div class="emoji-bar">
+                <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Tannins</span>
+            <div class="emoji-bar">
+                <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Acidity</span>
+            <div class="emoji-bar">
+                <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+            </div>
+        </div>
+    </div>
+    <div class="contest-details">
+        <strong>Contest Rating:</strong> Rated 95/100 by Wine Enthusiast.
+    </div>
+    <div class="hover-details hidden">
+        A Napa classic with bold blackberry and cassis flavors. Perfect for special occasions or rich dishes.
+    </div>
+</div>
+
+<!-- Chateau de Come Bordeaux -->
+<div class="wine-card">
+    <img src="images/chat_come.jpeg" alt="Chateau de Come Bordeaux">
+    <h3>Chateau de Come Bordeaux</h3>
+    <p>France - Elegant with notes of black cherry and earth.</p>
+    <div class="ratings-container">
+        <div class="metric">
+            <span>Sweetness</span>
+            <div class="emoji-bar">
+                <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Tannins</span>
+            <div class="emoji-bar">
+                <span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span><span class="filled">🍷</span>
+            </div>
+        </div>
+        <div class="metric">
+            <span>Acidity</span>
+            <div class="emoji-bar">
+                <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+            </div>
+        </div>
+    </div>
+    <div class="contest-details">
+        <strong>Contest Rating:</strong> Rated 92/100 by Decanter.
+    </div>
+    <div class="hover-details hidden">
+        A refined Bordeaux with elegant cherry and earthy tones. Ideal for lamb or mushroom-based dishes.
+    </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
+</footer>
+
+<script>
+    // Toggle Menu
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
+
+    // Hover and Click Details for Wine Cards
+    document.querySelectorAll('.wine-card').forEach((card) => {
+        card.addEventListener('mouseenter', () => {
+            const details = card.querySelector('.hover-details');
+            details.classList.remove('hidden');
         });
-    </script>
-    
+
+        card.addEventListener('mouseleave', () => {
+            const details = card.querySelector('.hover-details');
+            details.classList.add('hidden');
+        });
+
+        card.addEventListener('click', () => {
+            const details = card.querySelector('.hover-details');
+            details.classList.toggle('hidden');
+        });
+    });
+</script>
+
 </body>
 </html>
+
