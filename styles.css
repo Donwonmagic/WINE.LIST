@@ -242,16 +242,20 @@ body {
     transform: scale(1.1);
 }
 
-.metric span {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
+.metric {
+    display: flex;
+    flex-direction: column; /* Stack the label and emoji-bar */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Optional: Center vertically */
+    margin-bottom: 0.5rem; /* Spacing between metrics */
+    text-align: center; /* Ensures text stays centered */
 }
 
 .emoji-bar {
-    display: flex;
-    gap: 0.3rem;
-    font-size: 1.5rem; /* Adjust size for visual emphasis */
+    display: flex; /* Keep emojis in a row */
+    justify-content: center; /* Center emojis horizontally */
+    gap: 0.3rem; /* Space between emojis */
+    font-size: 1.5rem; /* Adjust emoji size */
 }
 
 .emoji-bar .filled {
