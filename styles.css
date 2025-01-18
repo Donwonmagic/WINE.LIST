@@ -237,15 +237,16 @@ body {
 }
 
 .wine-card img {
-    width: 100%; /* Makes the image fill its container */
-    max-width: 150px; /* Limits how large the image can get */
-    height: auto; /* Keeps the aspect ratio */
-    margin: 0 auto; /* Centers the image within the card */
-    object-fit: contain; /* Ensures the image doesn't stretch */
+    width: 150px; /* Set a consistent width for all images */
+    height: 300px; /* Set a consistent height for all images */
+    object-fit: contain; /* Ensure the image scales without stretching */
+    margin: 0 auto; /* Center the image within the card */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
 .wine-card img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
 }
 
 /* Contest Details */
