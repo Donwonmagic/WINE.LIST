@@ -216,7 +216,32 @@ body {
     transform: scale(1.1);
 }
 
-/* Animations */
+/* Ratings and Hover Details */
+.hover-details {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 100;
+    display: none;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.hover-details.hidden {
+    display: none;
+}
+
+.wine-card:hover .hover-details {
+    display: block;
+}
+
+/* Keyframes for Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
