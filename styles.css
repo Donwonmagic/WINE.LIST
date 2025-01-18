@@ -35,14 +35,17 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center everything horizontally */
+    position: relative; /* Allows absolute positioning of other elements */
 }
 
-/* Logo */
 .nav-logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     transition: transform 0.3s ease;
+    z-index: 1; /* Ensures logo stays on top */
 }
 
 .nav-logo img {
@@ -52,19 +55,18 @@ body {
 }
 
 .nav-logo:hover img {
-    transform: scale(1.1); /* Slight zoom-in effect on hover */
+    transform: scale(1.1); /* Slight zoom-in effect */
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu Positioned on the Right */
 .nav-toggle {
-    position: absolute; /* Take it out of the center alignment flow */
-    right: 1.5rem; /* Push it to the right */
+    position: absolute;
+    right: 2rem; /* Aligns the toggle to the right of the navbar */
     font-size: 2rem;
     cursor: pointer;
     color: #8B0000;
-    display: block;
-    border: none;
     background: none;
+    border: none;
     transition: transform 0.3s ease;
 }
 
