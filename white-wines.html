@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our exquisite selection of white wines, carefully curated for every taste.">
-    <title>White Wines | Irish Inn</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-
-<body class="white-wines">
-
-<nav class="navbar">
-    <div class="navbar-container">
-        <a href="index.html" class="nav-logo">
-            <img src="images/logo.png" alt="The Irish Inn Logo" class="nav-logo-img">
-        </a>
-        <span class="nav-toggle" onclick="toggleMenu()">☰</span>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="red-wines.html">Red Wines</a></li>
-            <li><a href="white-wines.html">White Wines</a></li>
-            <li><a href="sparkling-rose.html">Sparkling & Rosé</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Hero Section -->
-<header class="hero-small parallax">
-    <div class="overlay">
-        <h1 class="hero-title">White Wine Selection</h1>
-        <p class="hero-subtitle">Crisp, refreshing, and perfect for any occasion.</p>
-    </div>
-</header>
-
 <!-- Main Content -->
 <main>
     <section class="wine-list-section">
@@ -42,10 +6,10 @@
         <!-- Wine Grid -->
         <div class="wine-grid">
             <!-- Barone Fini Pinot Grigio -->
-            <div class="wine-card" data-detail="Sweetness 🍇🍇 - Crisp and slightly fruity.;Tannins 🍷🍷 - Gentle and soft.;Acidity 🍋🍋🍋 - Bright and refreshing." data-contest="Rated 89/100 by Wine Spectator.">
+            <div class="wine-card">
                 <img src="images/barone_fini.jpeg" alt="Barone Fini Pinot Grigio">
                 <h3>Barone Fini Pinot Grigio</h3>
-                <p>Italy - Refreshing and light with apple and pear notes.</p>
+                <p>Italy - Crisp and refreshing with notes of pear and apple.</p>
                 <div class="ratings-container">
                     <div class="metric">
                         <span>Sweetness</span>
@@ -56,112 +20,141 @@
                     <div class="metric">
                         <span>Tannins</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
                         </div>
                     </div>
                     <div class="metric">
                         <span>Acidity</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
                         </div>
                     </div>
                 </div>
-                <div class="hover-details hidden"></div>
-                <div class="contest-details hidden"></div>
+                <div class="contest-details">
+                    <strong>C</strong> Rated 90/100 by Wine Spectator.
+                </div>
+                <div class="hover-details hidden">
+                    <strong>Sweetness:</strong> Lightly dry with a hint of pear.<br>
+                    <strong>Tannins:</strong> None detected.<br>
+                    <strong>Acidity:</strong> Crisp and vibrant.<br>
+                    A refreshing white wine with pear and apple flavors, perfect for seafood or salads.
+                </div>
             </div>
 
             <!-- Nobilo Sauvignon Blanc -->
-            <div class="wine-card" data-detail="Sweetness 🍇🍇 - Lightly dry with citrus and passionfruit.;Tannins 🍷🍷 - Soft and delicate.;Acidity 🍋🍋🍋🍋 - High and zesty." data-contest="Rated 90/100 by Wine Enthusiast.">
+            <div class="wine-card">
                 <img src="images/nobilo_sb.jpeg" alt="Nobilo Sauvignon Blanc">
                 <h3>Nobilo Sauvignon Blanc</h3>
-                <p>New Zealand - Bright and zesty with citrus and tropical notes.</p>
+                <p>New Zealand - Vibrant with tropical fruit and herbal notes.</p>
                 <div class="ratings-container">
                     <div class="metric">
                         <span>Sweetness</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                            <span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
                         </div>
                     </div>
                     <div class="metric">
                         <span>Tannins</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
                         </div>
                     </div>
                     <div class="metric">
                         <span>Acidity</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span>
                         </div>
                     </div>
                 </div>
-                <div class="hover-details hidden"></div>
-                <div class="contest-details hidden"></div>
+                <div class="contest-details">
+                    <strong></strong> Rated 91/100 by Decanter.
+                </div>
+                <div class="hover-details hidden">
+                    <strong>Sweetness:</strong> Very dry and crisp.<br>
+                    <strong>Tannins:</strong> None detected.<br>
+                    <strong>Acidity:</strong> High and zesty.<br>
+                    A classic New Zealand Sauvignon Blanc with tropical fruit and herbal aromas. Great for pairing with goat cheese or light pasta.
+                </div>
             </div>
 
             <!-- Matua Sauvignon Blanc -->
-            <div class="wine-card" data-detail="Sweetness 🍇🍇 - Crisp and dry with lime notes.;Tannins 🍷🍷 - Soft and subtle.;Acidity 🍋🍋🍋🍋 - Bright and tangy." data-contest="Rated 91/100 by James Suckling.">
+            <div class="wine-card">
                 <img src="images/Matua.jpeg" alt="Matua Sauvignon Blanc">
                 <h3>Matua Sauvignon Blanc</h3>
-                <p>New Zealand - Crisp and refreshing with citrus and green apple.</p>
+                <p>New Zealand - Zesty and fresh with passionfruit and citrus.</p>
                 <div class="ratings-container">
                     <div class="metric">
                         <span>Sweetness</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                            <span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
                         </div>
                     </div>
                     <div class="metric">
                         <span>Tannins</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
                         </div>
                     </div>
                     <div class="metric">
                         <span>Acidity</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span>
                         </div>
                     </div>
                 </div>
-                <div class="hover-details hidden"></div>
-                <div class="contest-details hidden"></div>
+                <div class="contest-details">
+                    <strong></strong> Rated 92/100 by James Suckling.
+                </div>
+                <div class="hover-details hidden">
+                    <strong>Sweetness:</strong> Bone dry with citrus notes.<br>
+                    <strong>Tannins:</strong> None present.<br>
+                    <strong>Acidity:</strong> Bright and refreshing.<br>
+                    A crisp and zesty wine with vibrant passionfruit and citrus flavors, perfect for shellfish and light dishes.
+                </div>
             </div>
 
+            <!-- Remaining 3 Wines -->
             <!-- Whitehaven Sauvignon Blanc -->
-            <div class="wine-card" data-detail="Sweetness 🍇🍇 - Slightly dry with tropical flavors.;Tannins 🍷🍷 - Delicate and smooth.;Acidity 🍋🍋🍋🍋 - Bright and zesty." data-contest="Rated 92/100 by Wine Advocate.">
+            <div class="wine-card">
                 <img src="images/whitehaven.jpeg" alt="Whitehaven Sauvignon Blanc">
                 <h3>Whitehaven Sauvignon Blanc</h3>
-                <p>New Zealand - Tropical and zesty with grapefruit and melon.</p>
+                <p>New Zealand - Lively with tropical fruit and crisp citrus.</p>
                 <div class="ratings-container">
                     <div class="metric">
                         <span>Sweetness</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                            <span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
                         </div>
                     </div>
                     <div class="metric">
                         <span>Tannins</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
                         </div>
                     </div>
                     <div class="metric">
                         <span>Acidity</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span>
                         </div>
                     </div>
                 </div>
-                <div class="hover-details hidden"></div>
-                <div class="contest-details hidden"></div>
+                <div class="contest-details">
+                    <strong></strong> Rated 93/100 by Wine Enthusiast.
+                </div>
+                <div class="hover-details hidden">
+                    <strong>Sweetness:</strong> Bone dry with citrus and tropical notes.<br>
+                    <strong>Tannins:</strong> None present.<br>
+                    <strong>Acidity:</strong> Refreshing and zesty.<br>
+                    A vibrant Sauvignon Blanc perfect for seafood, salads, or as an aperitif.
+                </div>
             </div>
 
             <!-- Josh Chardonnay -->
-            <div class="wine-card" data-detail="Sweetness 🍇🍇🍇 - Slightly fruity.;Tannins 🍷🍷 - Smooth and soft.;Acidity 🍋🍋🍋 - Moderate acidity." data-contest="Rated 89/100 by Wine Enthusiast.">
+            <div class="wine-card">
                 <img src="images/josh_chard.jpeg" alt="Josh Chardonnay">
                 <h3>Josh Chardonnay</h3>
-                <p>California - Rich and creamy with notes of lemon and vanilla.</p>
+                <p>California - Creamy with hints of tropical fruit and vanilla.</p>
                 <div class="ratings-container">
                     <div class="metric">
                         <span>Sweetness</span>
@@ -172,7 +165,7 @@
                     <div class="metric">
                         <span>Tannins</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
                         </div>
                     </div>
                     <div class="metric">
@@ -182,44 +175,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="hover-details hidden"></div>
-                <div class="contest-details hidden"></div>
-            </div>
-
-            <!-- Frei Reserve Chardonnay -->
-            <div class="wine-card" data-detail="Sweetness 🍇🍇🍇 - Fruity and rich.;Tannins 🍷🍷 - Smooth with a creamy texture.;Acidity 🍋🍋🍋 - Moderate acidity." data-contest="Rated 90/100 by Decanter.">
-                <img src="images/frei_chard.jpeg" alt="Frei Reserve Chardonnay">
-                <h3>Frei Reserve Chardonnay</h3>
-                <p>California - Rich and creamy with buttery notes.</p>
-                <div class="ratings-container">
-                    <div class="metric">
-                        <span>Sweetness</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
-                        </div>
-                    </div>
-                    <div class="metric">
-                        <span>Tannins</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
-                        </div>
-                    </div>
-                    <div class="metric">
-                        <span>Acidity</span>
-                        <div class="emoji-bar">
-                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
-                        </div>
-                    </div>
+                <div class="contest-details">
+                    <strong></strong> Rated 92/100 by Wine Advocate.
                 </div>
-                <div class="hover-details hidden"></div>
-                <div class="contest-details hidden"></div>
+                <div class="hover-details hidden">
+                    <strong>Sweetness:</strong> Lightly fruity with creamy undertones.<br>
+                    <strong>Tannins:</strong> None present.<br>
+                    <strong>Acidity:</strong> Smooth and balanced.<br>
+                    A rich Chardonnay with tropical fruit and vanilla flavors. Pairs beautifully with roasted chicken or creamy pasta.
+                </div>
             </div>
 
             <!-- Rombauer Chardonnay -->
-            <div class="wine-card" data-detail="Sweetness 🍇🍇🍇🍇 - Rich and fruity.;Tannins 🍷🍷 - Soft and velvety.;Acidity 🍋🍋🍋 - Balanced acidity." data-contest="Rated 93/100 by James Suckling.">
+            <div class="wine-card">
                 <img src="images/rombauer.jpeg" alt="Rombauer Chardonnay">
                 <h3>Rombauer Chardonnay</h3>
-                <p>California - Creamy and full-bodied with tropical fruit notes.</p>
+                <p>California - Buttery with notes of peach and crème brûlée.</p>
                 <div class="ratings-container">
                     <div class="metric">
                         <span>Sweetness</span>
@@ -230,7 +201,7 @@
                     <div class="metric">
                         <span>Tannins</span>
                         <div class="emoji-bar">
-                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
                         </div>
                     </div>
                     <div class="metric">
@@ -240,8 +211,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="hover-details hidden"></div>
-                <div class="contest-details hidden"></div>
+                <div class="contest-details">
+                    <strong></strong> Rated 95/100 by Wine Enthusiast.
+                </div>
+                <div class="hover-details hidden">
+                    <strong>Sweetness:</strong> Moderately sweet with ripe peach notes.<br>
+                    <strong>Tannins:</strong> None present.<br>
+                    <strong>Acidity:</strong> Smooth and creamy.<br>
+                    A bold and buttery Chardonnay with notes of peach and crème brûlée. Perfect for rich seafood dishes or creamy risotto.
+                </div>
             </div>
         </div>
     </section>
@@ -259,37 +237,21 @@
         navLinks.classList.toggle('show');
     }
 
-    // Display Details on Hover or Click
+    // Hover and Click Details for Wine Cards
     document.querySelectorAll('.wine-card').forEach((card) => {
         card.addEventListener('mouseenter', () => {
             const details = card.querySelector('.hover-details');
-            const contest = card.querySelector('.contest-details');
-            const description = card.getAttribute('data-detail');
-            const contestRanking = card.getAttribute('data-contest');
-
-            details.innerHTML = description.replace(/;/g, '<br>');
-            contest.innerHTML = `<strong>Contest Ranking:</strong> ${contestRanking}`;
             details.classList.remove('hidden');
-            contest.classList.remove('hidden');
         });
 
         card.addEventListener('mouseleave', () => {
             const details = card.querySelector('.hover-details');
-            const contest = card.querySelector('.contest-details');
             details.classList.add('hidden');
-            contest.classList.add('hidden');
         });
 
         card.addEventListener('click', () => {
             const details = card.querySelector('.hover-details');
-            const contest = card.querySelector('.contest-details');
-            const description = card.getAttribute('data-detail');
-            const contestRanking = card.getAttribute('data-contest');
-
-            details.innerHTML = description.replace(/;/g, '<br>');
-            contest.innerHTML = `<strong>Contest Ranking:</strong> ${contestRanking}`;
             details.classList.toggle('hidden');
-            contest.classList.toggle('hidden');
         });
     });
 </script>
