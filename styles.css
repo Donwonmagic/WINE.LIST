@@ -18,11 +18,16 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.95); /* Transparent effect */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 0.5rem 2rem;
-    transition: background 0.3s ease; /* Smooth background transition */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: #fff; /* Solid background on scroll */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-container {
@@ -44,12 +49,43 @@ body {
 
 .nav-logo:hover {
     color: #B22222;
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .nav-links {
     list-style: none;
-    display: none; /* Hidden by default */
-    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+    opacity: 0; /* Hidden by default on mobile */
+    transform: translateY(-10px); /* Start above */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth slide-in and fade-in */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #8B0000;
+}
+
+/* Mobile Menu */
+.nav-toggle {
+    display: none;
+}
+
+.nav-links.show {
+    display: flex;
+    flex-direction: column; /* Stack links on mobile */
     background: white;
     position: absolute;
     top: 100%;
@@ -58,96 +94,36 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     z-index: 999;
-    transform: translateY(-10px); /* Initial position for animation */
-    opacity: 0; /* Hidden by default */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.nav-links.show {
-    display: flex; /* Show menu */
-    transform: translateY(0); /* Slide in */
-    opacity: 1; /* Fade in */
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .nav-toggle {
-    display: block; /* Visible on mobile screens */
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
     color: #8B0000;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .nav-toggle:hover {
-    transform: rotate(90deg); /* Rotate the toggle icon on hover */
+    transform: rotate(90deg);
 }
 
+/* Desktop Styles */
 @media (min-width: 769px) {
     .nav-links {
-        display: flex; /* Always visible on larger screens */
-        flex-direction: row;
-        position: static; /* Reset positioning */
-        opacity: 1;
+        display: flex;
         transform: translateY(0);
+        opacity: 1;
+        position: static;
         box-shadow: none;
     }
 
     .nav-toggle {
-        display: none; /* Hide toggle button */
-    }
-}
-
-
-/* Responsive Design for Navbar */
-@media (max-width: 768px) {
-    .nav-links {
         display: none;
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 200px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 1rem;
-        z-index: 999;
-        transform: translateY(-10px); /* Initial position for animation */
-        opacity: 0; /* Hidden by default */
-    }
-
-    .nav-links.show {
-        display: flex;
-        transform: translateY(0); /* Slide in */
-        opacity: 1; /* Fade in */
-    }
-
-    .navbar-container {
-        justify-content: space-between;
-    }
-
-    .nav-toggle {
-        display: block;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: #8B0000;
-        transition: transform 0.3s ease;
-    }
-
-    .nav-toggle:hover {
-        transform: rotate(90deg); /* Rotate the toggle icon on hover */
     }
 }
-
-.nav-toggle {
-    display: none;
-}
-
-/* Optional Enhancements */
-.navbar.scrolled {
-    background: #f4f4f4; /* Slightly darker background on scroll */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
 
 /* Hero Section */
 .hero, .hero-small {
@@ -176,13 +152,13 @@ body {
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     animation: slideInFromLeft 1.5s ease-in-out;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     animation: fadeIn 2s ease-in-out;
 }
@@ -200,21 +176,10 @@ body {
 
 .cta-button:hover {
     background: #B22222;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-/* Section Titles */
-.wine-list-section h2,
-.intro-section h2,
-.wine-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #8B0000;
-}
-
-/* Wine Grid Section */
+/* Wine Section */
 .wine-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -230,11 +195,13 @@ body {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    overflow: hidden;
 }
 
 .wine-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background: rgba(245, 245, 245, 1); /* Slight hover background */
 }
 
 .wine-card img {
@@ -242,99 +209,11 @@ body {
     object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Ratings */
-.ratings-container {
-    margin-top: 1rem;
-}
-
-.metric {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-}
-
-.emoji-bar {
-    font-size: 1.4rem;
-}
-
-/* Hover Details */
-.hover-details {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    border-radius: 0 0 10px 10px;
-    font-size: 0.9rem;
-    display: none;
-    text-align: center;
-    z-index: 10;
-}
-
-.hover-details.hidden {
-    display: none;
-}
-
-.wine-card:hover .hover-details {
-    display: block;
-}
-
-/* Category-Specific Styles */
-
-/* Red Wines */
-body.red-wines {
-    background-color: #fff5f5;
-}
-
-body.red-wines .hero-small {
-    background: url('https://via.placeholder.com/1920x500/ffcccc') center/cover no-repeat;
-}
-
-body.red-wines .hero-title,
-body.red-wines .hero-subtitle {
-    color: #8B0000;
-}
-
-/* White Wines */
-body.white-wines {
-    background-color: #f8fdf4;
-}
-
-body.white-wines .hero-small {
-    background: url('https://via.placeholder.com/1920x500/e6ffe6') center/cover no-repeat;
-}
-
-body.white-wines .hero-title,
-body.white-wines .hero-subtitle {
-    color: #6B8E23;
-}
-
-/* Sparkling & Rosé Wines */
-body.sparkling-rose {
-    background-color: #fdf4f8;
-}
-
-body.sparkling-rose .hero-small {
-    background: url('https://via.placeholder.com/1920x500/fde6ec') center/cover no-repeat;
-}
-
-body.sparkling-rose .hero-title,
-body.sparkling-rose .hero-subtitle {
-    color: #FF69B4;
-}
-
-/* Footer */
-.footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    margin-top: 2rem;
+.wine-card img:hover {
+    transform: scale(1.1);
 }
 
 /* Animations */
@@ -365,4 +244,14 @@ body.sparkling-rose .hero-subtitle {
     50% {
         transform: translateY(-10px);
     }
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
