@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Celebrate life's moments with our curated collection of sparkling and rosé wines.">
+    <meta name="description" content="Explore our exquisite selection of sparkling and rosé wines, perfect for any occasion.">
     <title>Sparkling & Rosé Wines | Irish Inn</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="sparkling-rose">
 
-    <nav class="navbar">
+<!-- Navbar -->
+<nav class="navbar">
     <div class="navbar-container">
         <a href="index.html" class="nav-logo">
             <img src="images/logo.png" alt="The Irish Inn Logo" class="nav-logo-img">
@@ -25,141 +27,219 @@
     </div>
 </nav>
 
-    
-    <!-- Hero Section -->
-    <header class="hero-small parallax">
-        <div class="overlay">
-            <h1 class="hero-title">Sparkling & Rosé Wine Selection</h1>
-            <p class="hero-subtitle">Celebrate life's moments with our curated collection of sparkling and rosé wines.</p>
-        </div>
-    </header>
+<!-- Hero Section -->
+<header class="hero-small parallax">
+    <div class="overlay">
+        <h1 class="hero-title">Sparkling & Rosé Wine Selection</h1>
+        <p class="hero-subtitle">Celebrate any occasion with elegance and finesse.</p>
+    </div>
+</header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="wine-list-section">
-            <h2>Explore Our Sparkling & Rosé Wines</h2>
+<!-- Main Content -->
+<main>
+    <section class="wine-list-section">
+        <h2>Explore Our Sparkling & Rosé Wines</h2>
 
-            <!-- Wine Grid -->
-            <div class="wine-grid">
-                <!-- Fleurs de Prairie Rosé -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇🍇 - Fruity and off-dry.;Tannins 🍷 - Very low tannins.;Acidity 🍋🍋🍋🍋 - Refreshing and crisp.">
-                    <img src="images/fleur.jpeg" alt="Fleurs de Prairie Rosé">
-                    <h3>Fleurs de Prairie Rosé</h3>
-                    <p>France - Delicate and floral with notes of strawberry and citrus.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋🍋</div>
+        <!-- Wine Grid -->
+        <div class="wine-grid">
+            <!-- Taittinger Brut -->
+            <div class="wine-card">
+                <img src="images/taittinger.jpeg" alt="Taittinger Brut">
+                <h3>Taittinger Brut</h3>
+                <p>France - Elegant and refined with hints of brioche and citrus.</p>
+                <div class="ratings-container">
+                    <div class="metric">
+                        <span>Sweetness</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
                         </div>
                     </div>
-                    <div class="hover-details hidden"></div>
+                    <div class="metric">
+                        <span>Tannins</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍷</span><span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Acidity</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- La Marca Prosecco -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇🍇 - Fruity and semi-dry.;Tannins 🍷 - No tannins.;Acidity 🍋🍋🍋🍋 - Bright and zesty.">
-                    <img src="images/LA_MARCA.jpeg" alt="La Marca Prosecco">
-                    <h3>La Marca Prosecco</h3>
-                    <p>Italy - Fresh and bubbly with notes of green apple and honey.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
+                <div class="contest-details">
+                    <strong>Contest Rating:</strong> Rated 94/100 by Wine Spectator.
                 </div>
-
-                <!-- Wycliff Brut Rosé -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇🍇🍇 - Noticeable sweetness with berry notes.;Tannins 🍷 - Very low tannins.;Acidity 🍋🍋🍋🍋🍋 - High acidity, lively bubbles.">
-                    <img src="images/wycliff.jpeg" alt="Wycliff Brut Rosé">
-                    <h3>Wycliff Brut Rosé</h3>
-                    <p>California - Lively and bright with red berry flavors and crisp bubbles.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- Veuve Clicquot -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry, with subtle fruit sweetness.;Tannins 🍷 - No tannins.;Acidity 🍋🍋🍋🍋🍋 - Crisp and refreshing.">
-                    <img src="images/veuve.jpeg" alt="Veuve Clicquot">
-                    <h3>Veuve Clicquot</h3>
-                    <p>France - Iconic Champagne with notes of citrus, brioche, and toasted almonds.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
-                </div>
-
-                <!-- Taittinger Brut -->
-                <div class="wine-card" data-detail="Sweetness 🍇🍇 - Dry and elegant.;Tannins 🍷 - Negligible tannins.;Acidity 🍋🍋🍋🍋🍋 - High acidity for balance.">
-                    <img src="images/tatt.jpeg" alt="Taittinger Brut">
-                    <h3>Taittinger Brut</h3>
-                    <p>France - Elegant and balanced with flavors of green apple, citrus, and honey.</p>
-                    <div class="ratings-container">
-                        <div class="metric">
-                            <span>Sweetness</span>
-                            <div class="emoji-bar">🍇🍇</div>
-                        </div>
-                        <div class="metric">
-                            <span>Tannins</span>
-                            <div class="emoji-bar">🍷</div>
-                        </div>
-                        <div class="metric">
-                            <span>Acidity</span>
-                            <div class="emoji-bar">🍋🍋🍋🍋🍋</div>
-                        </div>
-                    </div>
-                    <div class="hover-details hidden"></div>
+                <div class="hover-details hidden">
+                    A sophisticated sparkling wine with a refined balance of citrus and brioche. Perfect for toasts and celebrations.
                 </div>
             </div>
-        </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
-    </footer>
+            <!-- Veuve Clicquot -->
+            <div class="wine-card">
+                <img src="images/veuve_clicquot.jpeg" alt="Veuve Clicquot">
+                <h3>Veuve Clicquot</h3>
+                <p>France - Bold and crisp with hints of apple and honey.</p>
+                <div class="ratings-container">
+                    <div class="metric">
+                        <span>Sweetness</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Tannins</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Acidity</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contest-details">
+                    <strong>Contest Rating:</strong> Rated 93/100 by James Suckling.
+                </div>
+                <div class="hover-details hidden">
+                    A bold and vibrant Champagne with notes of apple, honey, and a lively finish. Great for special occasions.
+                </div>
+            </div>
 
-   <script src="scripts.js"></script>
-    
+            <!-- Fleur de Prairie Rosé -->
+            <div class="wine-card">
+                <img src="images/fleur_de_prairie.jpeg" alt="Fleur de Prairie Rosé">
+                <h3>Fleur de Prairie Rosé</h3>
+                <p>France - Delicate and floral with notes of strawberry and melon.</p>
+                <div class="ratings-container">
+                    <div class="metric">
+                        <span>Sweetness</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Tannins</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Acidity</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contest-details">
+                    <strong>Contest Rating:</strong> Rated 91/100 by Wine Enthusiast.
+                </div>
+                <div class="hover-details hidden">
+                    A Provence rosé with delicate floral aromas and a crisp finish. Enjoy with light salads or seafood.
+                </div>
+            </div>
+
+            <!-- La Marca Prosecco -->
+            <div class="wine-card">
+                <img src="images/la_marca_prosecco.jpeg" alt="La Marca Prosecco">
+                <h3>La Marca Prosecco</h3>
+                <p>Italy - Fresh and crisp with citrus and green apple notes.</p>
+                <div class="ratings-container">
+                    <div class="metric">
+                        <span>Sweetness</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Tannins</span>
+                        <div class="emoji-bar">
+                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Acidity</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contest-details">
+                    <strong>Contest Rating:</strong> Rated 90/100 by Decanter.
+                </div>
+                <div class="hover-details hidden">
+                    A refreshing Prosecco with vibrant citrus flavors. Ideal for brunch or aperitifs.
+                </div>
+            </div>
+
+            <!-- Wycliff Brut Rosé -->
+            <div class="wine-card">
+                <img src="images/wycliff_rose.jpeg" alt="Wycliff Brut Rosé">
+                <h3>Wycliff Brut Rosé</h3>
+                <p>California - Light and fruity with hints of strawberry and raspberry.</p>
+                <div class="ratings-container">
+                    <div class="metric">
+                        <span>Sweetness</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍇</span><span class="filled">🍇</span><span class="filled">🍇</span><span class="empty">🍇</span><span class="empty">🍇</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Tannins</span>
+                        <div class="emoji-bar">
+                            <span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span><span class="empty">🍷</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <span>Acidity</span>
+                        <div class="emoji-bar">
+                            <span class="filled">🍋</span><span class="filled">🍋</span><span class="filled">🍋</span><span class="empty">🍋</span><span class="empty">🍋</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contest-details">
+                    <strong>Contest Rating:</strong> Rated 88/100 by Wine Enthusiast.
+                </div>
+                <div class="hover-details hidden">
+                    A light and fruity sparkling rosé with bright strawberry notes. Perfect for casual celebrations or picnics.
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 The Irish Inn. All rights reserved.</p>
+</footer>
+
+<script>
+    // Toggle Menu
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
+
+    // Hover and Click Details for Wine Cards
+    document.querySelectorAll('.wine-card').forEach((card) => {
+        card.addEventListener('mouseenter', () => {
+            const details = card.querySelector('.hover-details');
+            details.classList.remove('hidden');
+        });
+
+        card.addEventListener('mouseleave', () => {
+            const details = card.querySelector('.hover-details');
+            details.classList.add('hidden');
+        });
+
+        card.addEventListener('click', () => {
+            const details = card.querySelector('.hover-details');
+            details.classList.toggle('hidden');
+        });
+    });
+</script>
+
 </body>
 </html>
