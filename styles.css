@@ -242,6 +242,27 @@ body {
     transform: scale(1.1);
 }
 
+.metric span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.emoji-bar {
+    display: flex;
+    gap: 0.3rem;
+    font-size: 1.5rem; /* Adjust size for visual emphasis */
+}
+
+.emoji-bar .filled {
+    color: #FF4500; /* Bright orange-red for selected emojis */
+}
+
+.emoji-bar .empty {
+    color: #B0B0B0; /* Light gray for unselected emojis */
+    opacity: 0.5; /* Transparency for distinction */
+}
+
 /* Ratings and Hover Details */
 .hover-details {
     background: rgba(0, 0, 0, 0.8);
