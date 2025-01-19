@@ -1,3 +1,6 @@
+
+
+
 /* Reset */
 * {
     margin: 0;
@@ -181,7 +184,6 @@ body {
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
 }
 
 .wine-card:hover {
@@ -191,10 +193,9 @@ body {
 }
 
 .wine-card img {
-    width: 100%;
-    max-width: 150px; /* Consistent width */
-    height: auto; /* Keep aspect ratio */
-    object-fit: contain; /* Prevent distortion */
+    width: 150px; /* Set consistent width */
+    height: 300px; /* Set consistent height */
+    object-fit: contain; /* Maintain proportions */
     margin: 0 auto;
     transition: transform 0.3s ease;
 }
@@ -301,4 +302,3 @@ body {
         transform: translateY(-10px);
     }
 }
-
