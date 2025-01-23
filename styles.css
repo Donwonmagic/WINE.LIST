@@ -191,11 +191,13 @@ body {
 }
 
 .wine-card img {
-    width: 150px; /* Set consistent width */
-    height: 300px; /* Set consistent height */
-    object-fit: contain; /* Maintain proportions */
-    margin: 0 auto;
-    transition: transform 0.3s ease;
+    width: 100%; /* Make the image responsive */
+    max-width: 150px; /* Limit the width for consistency */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 1rem; /* Space below the image */
+    object-fit: contain; /* Ensure the image fits without distortion */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .wine-card img:hover {
